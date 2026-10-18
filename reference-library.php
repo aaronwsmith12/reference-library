@@ -18,3 +18,4 @@ define( 'RL_URL', plugin_dir_url( __FILE__ ) );
 
 require_once RL_PATH . 'includes/post-types.php';
 require_once RL_PATH . 'includes/shortcode.php';
+require_once RL_PATH . 'includes/ajax.php';
