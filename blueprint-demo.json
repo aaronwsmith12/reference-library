@@ -17,6 +17,9 @@
         "url": "https://github.com/aaronwsmith12/reference-library",
         "ref": "HEAD",
         "refType": "refname"
+      },
+      "options": {
+        "targetFolderName": "reference-library"
       }
     },
     {
