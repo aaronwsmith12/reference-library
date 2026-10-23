@@ -4,6 +4,13 @@
   "login": true,
   "steps": [
     {
+      "step": "defineWpConfigConsts",
+      "consts": {
+        "WP_DEBUG": true,
+        "WP_DEBUG_DISPLAY": true
+      }
+    },
+    {
       "step": "installPlugin",
       "pluginData": {
         "resource": "git:directory",
