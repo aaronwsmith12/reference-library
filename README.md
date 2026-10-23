@@ -49,7 +49,7 @@ playground-setup.php         Sample entries and demo page
 
 ## Development notes
 
-Developed and tested on WordPress 7.1 with PHP 8.5.
+Developed and tested on WordPress 7.1 with PHP 8.3.
 
 ## License
 

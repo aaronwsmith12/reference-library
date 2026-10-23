@@ -60,6 +60,24 @@ function rl_render_results( $query ) {
 					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a>
 				</h3>
 				<div class="rl-entry-excerpt"><?php echo wp_kses_post( get_the_excerpt() ); ?></div>
+				<?php
+				$labels = array();
+				foreach ( array( 'rl_topic', 'rl_source' ) as $taxonomy ) {
+					$terms = get_the_terms( get_the_ID(), $taxonomy );
+					if ( $terms && ! is_wp_error( $terms ) ) {
+						foreach ( $terms as $term ) {
+							$labels[] = $term->name;
+						}
+					}
+				}
+				?>
+				<?php if ( $labels ) : ?>
+					<p class="rl-entry-tags">
+						<?php foreach ( $labels as $label ) : ?>
+							<span class="rl-tag"><?php echo esc_html( $label ); ?></span>
+						<?php endforeach; ?>
+					</p>
+				<?php endif; ?>
 			</article>
 			<?php
 		}

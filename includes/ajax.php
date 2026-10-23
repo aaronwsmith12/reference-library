@@ -9,9 +9,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 function rl_enqueue_assets() {
 	global $post;
 
-	if ( ! is_a( $post, 'WP_Post' ) || ! has_shortcode( $post->post_content, 'reference_library' ) ) {
+		if ( ! is_a( $post, 'WP_Post' ) || ! has_shortcode( $post->post_content, 'reference_library' ) ) {
 		return;
 	}
+
+	wp_enqueue_style(
+		'rl-style',
+		RL_URL . 'assets/css/reference-library.css',
+		array(),
+		RL_VERSION
+	);
 
 	wp_enqueue_script(
 		'rl-search',
