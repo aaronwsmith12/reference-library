@@ -10,6 +10,9 @@ A searchable reference library for WordPress. Add entries (notes, snippets, how-
 - Live results with jQuery and AJAX as you type or change a filter (no page reload)
 - Works without JavaScript: the same form falls back to a normal page-load search
 - Nonce verification, input sanitization and output escaping throughout
+- **Loading status:** a "Searching…" message appears while results load, and the list fades so it's clear something is happening.
+- **Topic and source tags:** every result shows its topics and sources as small tag pills.
+- **Shareable search URLs:** the search and filters are saved in the address bar (`?rl_search=php`), so a filtered view can be bookmarked or shared and survives a refresh.
 
 ## Usage
 

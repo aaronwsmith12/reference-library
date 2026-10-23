@@ -47,7 +47,7 @@
       }
 
       $results.addClass("rl-loading");
-	  updateUrl();
+      updateUrl();
 
       $status.text("Searching…");
 
