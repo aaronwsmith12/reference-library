@@ -2,6 +2,8 @@
 
 A searchable reference library for WordPress. Add entries (notes, snippets, how-tos), organize them by topic and source, and let visitors search and filter them from any page with a shortcode.
 
+![Reference Library live search](screenshot.png)
+
 ## Features
 
 - `reference_entry` custom post type for your entries
