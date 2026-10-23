@@ -4,6 +4,8 @@ A searchable reference library for WordPress. Add entries (notes, snippets, how-
 
 ![Reference Library live search](screenshot.png)
 
+**[Try the live demo in your browser](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/aaronwsmith12/reference-library/HEAD/blueprint-demo.json)** (WordPress Playground, no install needed; opens on the search page)
+
 ## Features
 
 - `reference_entry` custom post type for your entries
